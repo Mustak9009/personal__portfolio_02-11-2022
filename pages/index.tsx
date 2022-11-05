@@ -1,16 +1,16 @@
 import Head from 'next/head';
-import {Header} from '../components';
+import {Header, Hero} from '../components';
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-[rgb(36,36,36)] text-white h-screen'>
       <Head>
         <title>Mustak sk</title>
         <meta name="description" content='That is my personal portfolio web site..it was created by me😃' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <h1 className='text-2xl text-center bg-orange-400'>PortFolio</h1>
+      <Hero/>
     </div>
   )
 }

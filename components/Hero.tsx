@@ -8,9 +8,9 @@ export default function Hero() {
         delaySpeed:2000
     })
   return (
-    <div>
+    <div className='flex justify-center items-center overflow-hidden h-screen text-center relative'>
         <BackGroundCircle/>
-        <h1>
+        <h1 className='absolute'>
             <span>{text}</span>
             <Cursor cursorColor='orange'/>
         </h1>

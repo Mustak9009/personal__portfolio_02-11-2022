@@ -31,7 +31,7 @@ export default function Projects() {
               viewport={{ once: true }}
               src="https://images.ctfassets.net/4cd45et68cgf/5y7i4snzpqkr2oHRCRAkN4/3f386378a409fec422ba26eb7e52112f/Android_Collage_1920x1080_Vietnam_Vi.jpg"
               alt="project"
-              className="w-1/2"
+              className="w-1/4"
             />
             <div className="space-y-10 px-0 md:px-10 md:max-w-6xl  max-w-full">
               <h4 className="md:text-4xl font-semibold text-center text-2xl">

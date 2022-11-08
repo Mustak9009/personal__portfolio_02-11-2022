@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { About, Header, Hero } from "../components";
+import { About, Contact, Header, Hero, Projects, Skills, WorkWxperience } from "../components";
 
 export default function Home() {
   return (
@@ -18,6 +18,18 @@ export default function Home() {
       </section>
       <section className="snap-center" id="about">
         <About/>
+      </section>
+      <section className="snap-center" id="experience">
+        <WorkWxperience/>
+      </section>
+      <section className="snap-center" id="skills">
+        <Skills/>
+      </section>
+      <section className="snap-center" id="projects">
+        <Projects/>
+      </section>
+      <section className="snap-center" id="skills">
+        <Contact/>
       </section>
     </div>
   );

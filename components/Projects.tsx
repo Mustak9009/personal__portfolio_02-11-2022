@@ -12,7 +12,7 @@ export default function Projects() {
       <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-thumb-[#f7ab01]/70 scrollbar-track-gray-400/20">
         {projects.map((project, index) => (
           <div
             className="w-screen flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44"

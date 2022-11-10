@@ -1,6 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Header() {
   return (
     <header className="flex justify-between sticky top-0 items-start max-w-7xl mx-auto p-5 z-20 xl:items-center">
@@ -38,7 +39,8 @@ export default function Header() {
           fgColor="gray"
         />
       </motion.div>
-      <motion.div
+     <Link href='#contact'>
+     <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         className="flex justify-center items-center"
@@ -48,6 +50,7 @@ export default function Header() {
           Get in touch
         </p>
       </motion.div>
+     </Link>
     </header>
   );
 }

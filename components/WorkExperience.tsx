@@ -7,7 +7,7 @@ export default function WorkExperience() {
       <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory  scrollbar scrollbar-thumb-[#f7ab01]/90 scrollbar-track-gray-400/20">
         <ExperiencedCard />
         <ExperiencedCard />
         <ExperiencedCard />

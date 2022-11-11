@@ -4,10 +4,9 @@ import {groq} from 'next-sanity';
 import {sanityClient} from '../../sanity';
 import {PageInfo} from '../../typing';
 const query = groq`
-*[_type=='pageInfo'][0]
-}
+*[_type=='pageInfo']
 `;
-interface DataType{
+type  DataType ={
     pageInfo:PageInfo
   }
 export default async function handler(req: NextApiRequest,res: NextApiResponse<DataType>) {

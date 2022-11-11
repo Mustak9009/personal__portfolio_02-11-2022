@@ -12,9 +12,10 @@ interface Image{
     }
 }
 export interface PageInfo extends SanityBody{
-    _type:'PageInfo',
+    _type:'pageInfo',
     address:string,
     backgroundInformation:string,
+    profession:string
     email:string,
     role:string,
     heroImage:Image,

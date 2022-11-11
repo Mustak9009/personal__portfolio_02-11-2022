@@ -1,14 +1,19 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-export default function About() {
+import {PageInfo} from '../typing';
+import { urlFor } from "../sanity";
+interface Props{
+    pageInfo:PageInfo[]
+}
+export default function About({pageInfo}:Props) {
+  console.log(pageInfo);
   return (
     <div className="flex flex-col h-screen relative text-center md:flex-row md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
         About
       </h3>
       <motion.img
-        src="https://cdn.sanity.io/images/jax6vlq7/production/d142d5d58d21c984dfc99e401514d2b7de121af6-2400x2419.jpg"
+        src={urlFor(pageInfo[0]?.profilePic).url()!}
         alt="Mustak sk"
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -21,16 +26,7 @@ export default function About() {
           Here is a <span className="text-[#f7ab0a]">little</span> abut me...
         </h4>
         <p className="text-md">
-          I'm Mustak. Here's a little bit about me ...!{" "}
-          <span className="text-[#f7ab0a]">
-            With more than 2+ years of experience, I'm a Front-end web developer
-            and a graphic web designer.
-          </span>
-          I started my developer journey back in 2020 up till now. As a
-          front-end web developer, I've worked with startups and large
-          corporations to help build & scale their companies. Along the journey,
-          I create so many REAL-WORLD projects that help end users and
-          corporations.
+         {pageInfo[0].backgroundInformation}
         </p>
       </section>
     </div>

@@ -32,7 +32,7 @@ export default function Home({experience,pageInfo,project,social,skill}: Props) 
           name="description"
           content="That is my personal portfolio web site..it was created by me😃"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/jpg" href="/MustakSk.ico" />
       </Head>
       <Header social={social}/>
       <section className="snap-start" id="hero">

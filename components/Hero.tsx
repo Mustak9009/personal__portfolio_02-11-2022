@@ -14,7 +14,6 @@ export default function Hero({pageInfo}:Props) {
     loop: true,
     delaySpeed: 2000,
   });
-
   return (
     <div className="flex flex-col justify-center items-center h-screen space-y-8 overflow-hidden">
       <BackGroundCircle />

@@ -42,16 +42,16 @@ export default function Home({experience,pageInfo,project,social,skill}: Props) 
         <About pageInfo={pageInfo}/>
       </section>
       <section className="snap-center" id="experience">
-        <WorkWxperience />
+        <WorkWxperience experience={experience}/>
       </section>
       <section className="snap-center" id="skills">
-        <Skills />
+        <Skills skills={skill}/>
       </section>
       <section className="snap-center" id="projects">
-        <Projects />
+        <Projects projects={project}/>
       </section>
       <section className="snap-center" id="contact">
-        <Contact />
+        <Contact pageInfo={pageInfo}/>
       </section>
       <Link href="#hero" passHref>
         <footer className="sticky bottom-5 w-full cursor-pointer">

@@ -47,8 +47,8 @@ export interface Experience extends SanityBody{
     _type:'experience',
     company:Image,
     companyImage:image,
-    dateStared:date,
-    dateEnded:date,
+    dateStart:Date,
+    dateEnd:Date
     inCurrentlyWorkingHere:boolean,
     jobTitle:sting,
     points:string[],

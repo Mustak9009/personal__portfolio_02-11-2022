@@ -11,7 +11,7 @@ interface Props{
   pageInfo:PageInfo[]
 }
 export default function Contact({pageInfo}:Props) {
-  
+
   const {
     register,
     handleSubmit,
@@ -21,7 +21,8 @@ export default function Contact({pageInfo}:Props) {
     window.open(`mailto:${pageInfo[0].email}?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`);
   }
   return (
-    pageInfo.map((info)=>(
+    <>
+    {pageInfo.map((info)=>(
       <div className="h-screen relative flex flex-col text-center  md:text-left md:flex-row max-w-7xl px-10  justify-evenly mx-auto items-center" key={info._id}>
       <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
         Contact
@@ -135,6 +136,7 @@ export default function Contact({pageInfo}:Props) {
         </form>
       </div>
     </div>
-  ))
+  ))}
+            </>
   );
 }

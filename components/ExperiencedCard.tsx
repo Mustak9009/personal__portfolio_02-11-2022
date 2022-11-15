@@ -28,7 +28,7 @@ export default function ExperiencedCard({data}:Props) {
       />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">{data.jobTitle}</h4>
-        <p className="font-bold text-2xl mt-1 ">Tecknowledge</p>
+        <p className="font-bold text-xl mt-1 sm:text-2xl">Tecknowledge</p>
         <div className="flex space-x-2 my-2 flex-wrap">
           {data.technologies.map((data,i)=>(
             <img src={urlFor(data.image).url()!} alt={data.title} key={i} className="w-10 h-10 rounded-full object-cover"/> 

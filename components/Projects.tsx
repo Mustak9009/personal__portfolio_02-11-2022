@@ -15,7 +15,7 @@ export default function Projects({projects}:Props) {
       transition={{ duration: 1.5 }}
       className="flex flex-col relative text-center justify-evenly  items-center max-w-full mx-auto  z-0 snap-center h-screen md:flex-row  "
     >
-      <h3 className="absolute top-20 tracking-[20px] uppercase text-gray-500 text-2xl">
+      <h3 className="absolute top-32 sm:top-20 tracking-[20px] uppercase text-gray-500 text-xl sm:text-2xl">
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-thumb-[#f7ab01]/70 scrollbar-track-gray-400/20">

@@ -24,13 +24,13 @@ export default function Contact({pageInfo}:Props) {
     <>
     {pageInfo.map((info)=>(
       <div className="h-screen relative flex flex-col text-center  md:text-left md:flex-row max-w-7xl px-10  justify-evenly mx-auto items-center" key={info._id}>
-      <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-2xl">
+      <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 sm:text-2xl text-xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="sm:text-4xl text-2xl font-semibold text-center md:mt-32 mt-10">
+        <h4 className="sm:text-4xl text-xl font-semibold text-center md:mt-32 mt-10">
           I have got just what you need.
-          <span className="decoration-[#f7ab0a]/50 underline">Lets Talk</span>
+          <span className="text-orange-400 underline">Lets Talk</span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
@@ -130,7 +130,7 @@ export default function Contact({pageInfo}:Props) {
             name="message"
             placeholder="message..."
             />
-          <button type="submit" className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg">
+          <button type="submit" className="bg-[#f7ab0a] py-2 px-4 sm:py-5 sm:px-10 rounded-md text-black font-bold text-lg">
             Submit
           </button>
         </form>

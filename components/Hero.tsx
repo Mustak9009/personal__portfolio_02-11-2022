@@ -25,9 +25,9 @@ export default function Hero({pageInfo}:Props) {
         className="rounded-full"
       />
       <h2 className="text-gray-500 uppercase tracking-[15px]  text-center ">
-        {pageInfo[0].role}
+        {pageInfo[0].role} 
       </h2>
-      <h1 className="text-4xl font-semibold lg:text-5xl text-center">
+      <h1 className="text-3xl md:text-4xl font-semibold lg:text-5xl text-center">
         <span className="text-orange-400/80">{text}</span>
         <Cursor cursorColor="orange" />
       </h1>

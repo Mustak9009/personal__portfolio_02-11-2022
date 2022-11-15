@@ -35,22 +35,22 @@ export default function Home({experience,pageInfo,project,social,skill}: Props) 
         <link rel="icon" type="image/jpg" href="/MustakSk.ico" />
       </Head>
       <Header social={social}/>
-      <section className="sm:snap-start" id="hero">
+      <section className="snap-start" id="hero">
         <Hero pageInfo={pageInfo}/>
       </section>
-      <section className="sm:snap-center" id="about">
+      <section className="snap-center" id="about">
         <About pageInfo={pageInfo}/>
       </section>
-      <section className="sm:snap-center" id="experience">
+      <section className="snap-center" id="experience">
         <WorkWxperience experience={experience}/>
       </section>
-      <section className="sm:snap-center" id="skills">
+      <section className="snap-center" id="skills">
         <Skills skills={skill}/>
       </section>
-      <section className="sm:snap-center" id="projects">
+      <section className="snap-center" id="projects">
         <Projects projects={project}/>
       </section>
-      <section className="sm:snap-center" id="contact">
+      <section className="snap-center" id="contact">
         <Contact pageInfo={pageInfo}/>
       </section>
       <Link href="#hero" passHref>

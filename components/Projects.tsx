@@ -38,7 +38,21 @@ export default function Projects({projects}:Props) {
               viewport={{ once: true }}
               src={urlFor(project.image).url()!}
               alt="project"
-              className="xl:w-1/2 w-full rounded-xl"
+              className="xl:w-1/2 w-full rounded-xl hidden sm:block"
+            />
+              <motion.img
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{ duration: 1.2 }}
+              viewport={{ once: true }}
+              src={urlFor(project.image).url()!}
+              alt="project"
+              className="xl:w-1/2 w-full rounded-xl block sm:hidden"
             />
             <div className="space-y-10 px-0 md:px-10 md:max-w-6xl  max-w-full">
               <h4 className="md:text-4xl font-semibold text-center text-2xl">

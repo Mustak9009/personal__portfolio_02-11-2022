@@ -7,7 +7,6 @@ type Props = {
   data:Experience
 }
 export default function ExperiencedCard({data}:Props) {
-  console.log(data)
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 transition-opacity cursor-pointer duration-200 overflow-hidden">
       <motion.img

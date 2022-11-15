@@ -23,7 +23,7 @@ export default function Contact({pageInfo}:Props) {
   return (
     <>
     {pageInfo.map((info)=>(
-      <div className="h-screen relative flex flex-col text-center  md:text-left md:flex-row w-full sm:max-w-7xl px-10 border-2    justify-evenly mx-auto items-center" key={info._id}>
+      <div className="h-screen relative flex flex-col text-center  md:text-left md:flex-row w-full sm:max-w-7xl px-10 justify-evenly mx-auto items-center" key={info._id}>
       <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 sm:text-2xl text-xl invisible sm:visible">
         Contact
       </h3>

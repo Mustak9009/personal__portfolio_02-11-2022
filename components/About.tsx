@@ -8,7 +8,7 @@ interface Props{
 export default function About({pageInfo}:Props) {
   return (
     <div className="flex flex-col h-screen relative text-center md:flex-row md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-xl sm:text-2xl">
+      <h3 className="absolute top-24 tracking-[20px] uppercase text-gray-500 text-xl sm:text-2xl invisible sm:visible">
         About
       </h3>
       <motion.img

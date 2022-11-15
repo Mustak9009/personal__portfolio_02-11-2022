@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import {Experience} from '../typing';
 import {urlFor} from '../sanity';
+import Link from 'next/link';
 type Props = {
   data:Experience
 }
 export default function ExperiencedCard({data}:Props) {
-
+  console.log(data)
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 transition-opacity cursor-pointer duration-200 overflow-hidden">
       <motion.img
@@ -27,7 +28,9 @@ export default function ExperiencedCard({data}:Props) {
           className='w-1/2 rounded-md '
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">{data.jobTitle}</h4>
+     <Link href={data.url} passHref>
+     <h4 className="text-4xl font-light">{data.jobTitle}</h4>
+     </Link>
         <p className="font-bold text-xl mt-1 sm:text-2xl">Tecknowledge</p>
         <div className="flex space-x-2 my-2 flex-wrap">
           {data.technologies.map((data,i)=>(

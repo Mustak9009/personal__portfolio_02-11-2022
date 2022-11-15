@@ -50,7 +50,7 @@ export default function Home({experience,pageInfo,project,social,skill}: Props) 
       <section className="snap-center" id="projects">
         <Projects projects={project}/>
       </section>
-      <section className="snap-center" id="contact">
+      <section className="sm:snap-center" id="contact">
         <Contact pageInfo={pageInfo}/>
       </section>
       <Link href="#hero" passHref>

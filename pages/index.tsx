@@ -32,6 +32,7 @@ export default function Home({experience,pageInfo,project,social,skill}: Props) 
           name="description"
           content="That is my personal portfolio web site..it was created by me😃"
         />
+        <meta name="p:domain_verify" content="4ea4ff08c01062415eccf0f6b7455c71"/>
         <link rel="icon" type="image/jpg" href="/MustakSk.ico" />
       </Head>
       <Header social={social}/>
